@@ -1,0 +1,21 @@
+A Django settings file contains all the configuration of your Django installation. This document explains how settings work and which settings are available.
+
+ALLOWED_HOSTS = ['www.example.com']
+DEBUG = False
+DEFAULT_FROM_EMAIL = 'webmaster@example.com'
+
+
+Note
+
+If you set DEBUG to False, you also need to properly set the ALLOWED_HOSTS setting.
+
+A settings file is just a Python module with module-level variables. 
+
+
+
+It doesn’t allow for Python syntax errors.
+
+It can assign settings dynamically using normal Python syntax. For example:
+
+MY_SETTING = [str(i) for i in range(30)]
+It can import values from other settings files.
